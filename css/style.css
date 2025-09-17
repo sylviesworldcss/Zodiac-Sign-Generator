@@ -1,0 +1,132 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body, html{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  font-family: 'Anybody', sans-serif;
+  font-size: large;
+  text-align: center;
+  background-color: rgba(24, 24, 24, 0.904);
+  color: white;
+  height: 100vh;
+  /* ^viewport height streatches the element to fill the entire screen height^ */
+  margin: 0;
+}
+main{
+  position: relative;
+  /* ^makes content stay on top of background^ */
+  z-index: 1;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px; 
+  /* ^controls max width for larger screens^ */
+}
+h1{
+  font-size: 5em;
+  /* ^3 times the parent's font size */
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+h2{
+  font-size: 2em;
+  color: white;
+}
+
+input {
+  padding: 15px;
+  width: 200px;
+  margin:  10px 0;
+  margin-top: 60px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+button{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  width: 200px;
+  margin:  10px 0;
+  margin-top: 60px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.reset{
+  background-color: white;
+  color: black;
+  font-weight: 200;
+  padding: 10px;
+  width: 100px;
+  margin:  5px 0;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: rgb(53, 43, 43);
+}
+p{
+  margin-top: 20px;
+  font-size: 1.1em;
+  color:white;
+}
+#result{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  /* ^glowy effect^ */
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+strong{
+  font-weight: bold;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.stars{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  /* ^makes sure the video keeps in the bg^ */
+  overflow: hidden;
+
+}
+.video-element{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* ^for background videos to fit properly^  */
+}
+
+@media (max-width: 768px) {
+  h1{
+    font-size: 2.5em;
+  }
+  h2{
+    font-size: 1.2em;
+  }
+  input, button{
+    width: 200px;
+    font-size: 1.1em;
+  }
+}

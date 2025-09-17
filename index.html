@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>When's Your Bday Zodiac Sign Generator</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon-swe.png" type="image/png">
+    <!-- ^lil icon in the browser tab^ -->
+  </head>
+  <body>
+    <main>
+      <!-- responsive mp4 background -->
+      <div class="stars">
+        <video autoplay muted loop class="video-element">
+          <source src="img/stars.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <h1>When's Your Birthday?</h1>
+      <h2>LOOKING 4 A SIGN? ENTER UR BIRTHDAY & EXPERIENCE THE MAGIC</h2>
+      <section class="birthday">
+      <input type="text" id="month" />
+      <input type="number" id="date" />
+      <button>Zodiac sign</button>
+	  <button class="reset">reset</button>
+
+      <p id="result"></p>
+      <p>Enter your month of birth and day. <strong>Ex: February 26</strong></p>
+	</section>
+      <script type="text/javascript" src="js/main.js"></script>
+    </main>
+  </body>
+</html>
+
+<!-- There should be minimum 12 unique horoscopes -->
+<!-- form input userr birthday
+ result zodiac sign -->
