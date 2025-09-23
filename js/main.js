@@ -55,3 +55,5 @@ document.querySelector("#month").value = "";
 document.querySelector("#date").value ="";
 document.querySelector("#result").innerText ="";
 }
+
+// Worked on with classmates mau,angy, marjorie, winnie, jazzi, justin jimierz, ken and erica also used the career class weekend template from @leon noel and codecademy as refernce.

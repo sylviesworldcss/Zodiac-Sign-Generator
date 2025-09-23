@@ -17,12 +17,13 @@ body, html{
   justify-content: center;
   align-items:  center;
   font-family: 'Anybody', sans-serif;
+  /* wanted a more premium looking font and got this from google */
   font-size: large;
   text-align: center;
   background-color: rgba(24, 24, 24, 0.904);
   color: white;
   height: 100vh;
-  /* ^viewport height streatches the element to fill the entire screen height^ */
+  /* ^viewport height streatches the element to fill the entire screen height from google^ */
   margin: 0;
 }
 main{
@@ -88,7 +89,7 @@ p{
   margin-top: 20px;
   color: #ffffff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  /* ^glowy effect^ */
+  /* ^glowy effect^ from google */
   margin-top: 30px;
   letter-spacing: 1px;
 }
@@ -115,7 +116,7 @@ strong{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* ^for background videos to fit properly^  */
+  /* ^for background videos to fit properly from google^  */
 }
 
 @media (max-width: 768px) {
@@ -130,3 +131,4 @@ strong{
     font-size: 1.1em;
   }
 }
+/* used old responsive layout logic cross referenced with google gemini */
